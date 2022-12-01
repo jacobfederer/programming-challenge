@@ -1,13 +1,10 @@
-package de.exxcellent.challenge;
-
-import de.exxcellent.challenge.reader.Distance;
+package de.exxcellent.challenge.calculator;
 
 import java.util.List;
 
 public class SmallestDistanceCalculator {
 
-
-    public Distance calculateSmallestDistance(List<Distance> distances) {
+    public static Distance calculateSmallestDistance(List<Distance> distances) {
 
         Distance smallestDistance = null;
 

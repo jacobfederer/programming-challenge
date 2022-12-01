@@ -1,6 +1,5 @@
-package de.exxcellent.challenge;
+package de.exxcellent.challenge.calculator;
 
-import de.exxcellent.challenge.reader.Distance;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -24,7 +23,6 @@ public class SmallestDistanceCalculatorTest {
 
     }
 
-
     @Test
     void itShouldReturnSmallestAbsoluteDistanceWhenComparingDistancesWithSpread() {
 
@@ -37,6 +35,5 @@ public class SmallestDistanceCalculatorTest {
         assertEquals("GHI", distance.label, "cannot find smallest distance");
 
     }
-
 
 }

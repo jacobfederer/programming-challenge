@@ -1,4 +1,4 @@
-package de.exxcellent.challenge.reader;
+package de.exxcellent.challenge.calculator;
 
 public class Distance {
     public String label;
