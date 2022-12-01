@@ -28,6 +28,5 @@ public class DistanceConsoleWriterTest {
 
         assertEquals("Day with smallest temperature spread : ABCDEF\n", outContent.toString());
 
-
     }
 }
