@@ -16,9 +16,7 @@ public class CSVDistanceReaderTest {
     CSVDistanceReader reader = new CSVDistanceReader("Day", "MnT", "MxT");
 
     @Test()
-    void itShouldReadTheMatchingColumnAndRowCountWhenReadingSampleCSVFile() throws IOException, URISyntaxException, DataInconsistentException {
-
-        //TODO: Handle exceptions
+    void itShouldReadMatchingRowCountAndSampleRowWhenReadingSampleCSVFile() throws IOException, URISyntaxException, DataInconsistentException {
 
         var weatherCSVURI = getClass().getClassLoader().getResource("de/exxcellent/challenge/weather.csv");
 
