@@ -15,9 +15,7 @@ public class SmallestDistanceCalculatorTest {
     @Test
     void itShouldReturnSmallestDistanceWhenComparingMultipleDistances() {
 
-        var calculator = new SmallestDistanceCalculator();
-
-        var distance = calculator.calculateSmallestDistance(Arrays.asList(abc, def, ghi));
+        var distance = SmallestDistanceCalculator.lookupSmallestSpread(Arrays.asList(abc, def, ghi));
 
         assertEquals("GHI", distance.label, "cannot find smallest distance");
 
@@ -28,9 +26,7 @@ public class SmallestDistanceCalculatorTest {
 
         Distance jkl = new Distance("JKL", 60, 40);
 
-        var calculator = new SmallestDistanceCalculator();
-
-        var distance = calculator.calculateSmallestDistance(Arrays.asList(jkl, def, ghi));
+        var distance = SmallestDistanceCalculator.lookupSmallestSpread(Arrays.asList(jkl, def, ghi));
 
         assertEquals("GHI", distance.label, "cannot find smallest distance");
 

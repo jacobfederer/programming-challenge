@@ -48,8 +48,8 @@ public final class App {
         try {
             var distances = reader.readDistancesFromUri(path.toUri());
 
-            var distance = SmallestDistanceCalculator.calculateSmallestDistance(distances);
-            
+            var distance = SmallestDistanceCalculator.lookupSmallestSpread(distances);
+
             if (distance != null) {
                 writer.writeDistance(distance);
             }

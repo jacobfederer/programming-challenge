@@ -4,7 +4,10 @@ import java.util.List;
 
 public class SmallestDistanceCalculator {
 
-    public static Distance calculateSmallestDistance(List<Distance> distances) {
+    /*
+     * Given a list of distances it looks up the item with the smallest spread and returns it.
+     */
+    public static Distance lookupSmallestSpread(List<Distance> distances) {
 
         Distance smallestDistance = null;
 
